@@ -10,8 +10,7 @@ import play.api.test.Helpers._
  * You can mock out a whole application including requests, plugins etc.
  * For more information, consult the wiki.
  */
-@RunWith(classOf[JUnitRunner])
-class ApplicationSpec extends Specification {
+object ApplicationSpec extends Specification {
 
   "Application" should {
 
@@ -27,4 +26,22 @@ class ApplicationSpec extends Specification {
       contentAsString(home) must contain ("Your new application is ready.")
     }
   }
+
+  "Arithetic" should {
+    "add two numbers" in {
+      1 + 1 mustEqual 2
+    }
+    "add three numbers" in {
+      1 + 1 + 1 mustEqual 3
+    }
+  }
+}
+
+object T extends App {
+  def invoke(first: String)(second: String) = {
+    first + second
+  }
+  println(invoke{"HELLO"}{
+    "WORLD"
+  })
 }

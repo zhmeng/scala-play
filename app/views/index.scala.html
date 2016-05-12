@@ -1,7 +1,47 @@
 @(message: String)
 
-@main("Welcome to Play") {
+@main("CSS USAGE") {
+	<div id="main">div 是一个标准的块级元素。一个块级元素会新开始一行并且尽可能撑满容器。其他常用的块级元素包括 p 、 form 和HTML5中的新元素： header 、 footer 、 section 等等。</div>
+	<div class="simple">SIMPLE</div>
+	<div class="fancy">FANCY</div>
+	<div class="static">STATIC</div>
+	<div class="relative1">RELATIVE1</div>
+	<div class="relative2">RELATIVE2</div>
+	<div class="relative">
+		RELATIVE
+		<div class="absolute">ABSOLUTE</div>
+	</div>
 
-    @play20.welcome(message)
+	<div class="fixed">FIXED</div>
+	<div class="content">
+		<div class="clearfix"><div class="img">IMAGE</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio</div>
+	</div>
 
+	<div class="container">
+		<nav>NAV</nav>
+		<section>SECTION</section>
+		<section>HAHHA</section>
+	</div>
+
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<div class="box">BOX</div>
+	<section class="after-box">SECTION</section>
+
+	<div class="box2">BOX2</div>
+	<div class="box2">BOX2</div>
+	<div class="box2">BOX2</div>
+	<div class="box2">BOX2</div>
+	<div class="box2">BOX2</div>
+	<div class="box2">BOX2</div>
+	<div class="box2">BOX2</div>
+
+	<div class="vertical-container"><div>VERTICAL-CONTAINER</div></div>
+
+	<footer>FOOTER</footer>
 }

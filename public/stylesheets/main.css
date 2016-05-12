@@ -1,0 +1,147 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    margin-bottom: 300px;
+}
+
+div, footer, nav, section{
+    background-color: darkturquoise;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+#main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.simple {
+    width: 500px;
+    margin: 20px auto;
+    background-color: #4c803e;
+}
+.fancy {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #91836D;
+    border-width: 10px;
+}
+.static {
+    position: static;
+}
+.relative1 {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: chartreuse;
+}
+.relative2 {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    background-color: crimson;
+    width: 500px;
+}
+.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+.absolute {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-color: darkorchid;
+}
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: darkolivegreen;
+}
+.content{
+    width: 600px;
+    margin: 10px;
+}
+.clearfix {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    zoom: 1;
+}
+.img {
+    float: right;
+    background-color: crimson;
+}
+
+.container {
+    margin-top:10px;
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 30%;
+}
+.box {
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin: 1em;
+}
+.after-box {
+    clear: left;
+}
+
+.box2 {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+}
+
+.vertical-container {
+    height: 800px;
+    width: 800px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+@media screen and (min-width:600px) {
+    nav {
+        background-color: blue;
+        float: left;
+        width: 25%;
+        height: 50px;
+    }
+    section {
+        background-color: darkorange;
+        margin-left: 25%;
+        height: 50px;
+    }
+}
+@media screen and (max-width:599px) {
+    nav li {
+        background-color: darkorange;
+        display: inline;
+        height: 50px;
+    }
+}
