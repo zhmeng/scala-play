@@ -5,6 +5,10 @@
 # Home page
 GET     /                           controllers.Application.index
 
+GET		/welcome/:name				controllers.Application.welcome(name: String)
+
+GET		/bye						controllers.Application.bye
+
 GET		/demo						controllers.Application.demo
 
 GET		/css						controllers.Application.css
@@ -17,5 +21,44 @@ GET		/panelandwall				controllers.Application.panelAndwall
 
 GET		/buttons					controllers.Application.buttons
 
+GET		/echo						controllers.Application.echo
+
+GET		/clients/:id				controllers.Clients.show(id: Long)
+
+GET		/items/$id<[0-9]+>			controllers.Application.items(id: Long)
+
+
+GET		/flash						controllers.Application.flashT
+GET		/flash/save					controllers.Application.save
+
+GET		/bodyparser/save			controllers.Application.bodyParserSave
+
+GET		/logging/index				controllers.Application.loggingIndex
+
+GET		/contentNego				controllers.Application.contentNego
+
+GET		/async						controllers.Application.async
+
+GET		/futureResult				controllers.Application.futureResult
+
+GET		/timeoutResult				controllers.Application.timeoutResult
+
+GET		/readPdf					controllers.Application.readPdf
+
+GET		/chunked					controllers.Application.chunked
+
+GET		/comet						controllers.Application.comet
+
+GET		/comet/index				controllers.Application.cometIndex
+
+GET		/socket						controllers.Application.socket
+
+GET		/todo						controllers.Application.todo
+
+GET		/require/remote				controllers.Application.requireRemote
+GET		/require/remoteTpl			controllers.Application.requireRemoteTpl
+
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
+GET		/file/*name					controllers.Application.download(name)

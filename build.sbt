@@ -5,7 +5,8 @@ version := "1.0-SNAPSHOT"
 libraryDependencies ++= Seq(
   jdbc,
   anorm,
-  cache
+  cache,
+  "commons-httpclient" % "commons-httpclient" % "3.1"
 )     
 
 play.Project.playScalaSettings
